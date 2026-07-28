@@ -1,4 +1,29 @@
 # -*- coding: utf-8 -*-
+# =============================================================================
+#  ALL THE WORDS ON YOUR WEBSITE LIVE IN THIS FILE.
+#
+#  Edit it on github.com (pencil icon), commit, wait about a minute. The site
+#  rebuilds itself. Never edit the .html files -- they are regenerated from
+#  this one and your changes there would be wiped out.
+#
+#  Three rules that cover almost every mistake:
+#    1. Text goes inside "quotes". Keep both of them.
+#    2. Every line in a list ends with a comma.
+#    3. Use &rsquo; for an apostrophe and &mdash; for a long dash, so they
+#       display correctly in a browser.
+#
+#  If you break something the website does NOT break -- the rebuild just fails
+#  and the old pages stay up. Check the Actions tab for a red cross.
+#
+#  WHAT TO EDIT, AND WHERE (search for the word in capitals):
+#    ROLE, TAG, EMAIL ...... your title, one-line summary, contact
+#    BIO ................... the About page paragraphs
+#    NEWS .................. the news list on the homepage
+#    AREAS ................. the three research sections
+#    METHODS + SLUGS ....... your publications
+#    PEOPLE ................ the People page
+#    COURSES ............... the Teaching page
+# =============================================================================
 NAME  = "Aaron Wolfe Scheffler"
 ROLE  = "Associate Professor"
 ROLE_FULL = "Associate Professor in Residence"
@@ -18,6 +43,9 @@ LINKS = [("CV", CV),
 NAV = [("index.html","About"),("research.html","Research"),
        ("publications.html","Publications"),("people.html","People"),("teaching.html","Teaching")]
 
+# --- BIO: the paragraphs on your About page ------------------------------
+# One paragraph per pair of quotes. <strong>bold</strong> and
+# <a href="...">links</a> both work.
 BIO = [
  'I am an Associate Professor in Residence in the <a href="https://profiles.ucsf.edu/aaron.scheffler">Department of Epidemiology &amp; Biostatistics</a> at the University of California, San Francisco. My research program addresses the statistical challenges that arise in highly structured biomedical data &mdash; disease progression models, joint models of multi-modal brain images, high-dimensional regressions, functional data analysis, and curve registration and warping.',
  'I am a core statistician for several centers at the UCSF Memory and Aging Center, including the Alzheimer’s Disease Research Center and the <a href="https://websites.ucsf.edu/website/alba-language-neurobiology-lab">ALBA Language Neurobiology Laboratory</a>, and I hold faculty appointments in Computational Precision Health, the Bakar Computational Health Sciences Institute, and the Center for Intelligent Imaging. I maintain a wide set of collaborations with clinical and public health researchers at UCSF in neurology, orthopedics, and HIV/AIDS.',
@@ -25,10 +53,17 @@ BIO = [
  'Prior to UCSF I received a doctorate from the Department of Biostatistics at UCLA under the advisement of <a href="https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk">Dr. Damla Senturk</a>, and a BA in Biochemistry from Columbia University.',
 ]
 
+# --- NEWS: the list on your homepage -------------------------------------
+# Newest at the top. Each line is:
+#     ("Date", "kind", "The sentence", flag),
+# kind must be one of: paper  funding  position  other   (sets the little label)
+# flag is None, or "Filled" for a job advert that has been filled.
+# To add an item, copy a whole line, paste it above, and change the wording.
 NEWS = [
  # (date, kind, html, flag)   kind: position | funding | paper | other
  ("July 2026","other","I have been promoted to <strong>Associate Professor in Residence</strong> in the Department of Epidemiology &amp; Biostatistics at UCSF.",None),
- ("July 2026","funding","We&rsquo;re funded! I was awarded an <strong>NIH/NCATS K12</strong> grant titled &ldquo;CTSA K12 Program at UCSF.&rdquo; I serve as a Multiple Principal Investigator and Associate Program Director for Biostatistics and AI.",None),
+ ('July 2026','funding','We&rsquo;re funded! I am part of <strong>Team ATLAS</strong>, awarded a <strong>Dementia Frontiers Fund</strong> grant from Alzheimer&rsquo;s Research UK and Gates Ventures. The team is led by Professor Duygu Tosun (University of California, San Francisco) and Dr Oliver Robinson (Imperial College London), and brings together researchers from the US, UK and Spain to study the amyloid-to-tau interval and the factors that accelerate or delay the onset of symptoms. More information can be found <a href="https://www.alzheimersresearchuk.org/news/dementia-frontiers-fund-backs-12-international-teams/">here</a>.',None),
+ ("July 2026","funding","We&rsquo;re funded! We were awarded an <strong>NIH/NCATS K12</strong> grant titled &ldquo;CTSA K12 Program at UCSF.&rdquo; I serve as a Multiple Principal Investigator and Associate Program Director for Biostatistics and AI.",None),
  ("January 2026","position","We&rsquo;re hiring! Dr. Rajarshi Guhaniyogi and I are seeking a postdoctoral research associate for an NIH-funded research program, beginning September 2026. The research relates to one or more of the following areas: Bayesian learning with heterogeneous objects (e.g.&nbsp;tensor and functional data); Bayesian interpretable deep learning with heterogeneous objects; distributed Bayesian computation and federated learning with Gaussian processes and their variants; and data sketching with random sketching matrices for efficient Bayesian inference with massive structured data. Please e-mail me directly for more information.","Filled"),
  ("2025","paper","Our paper &ldquo;Sketching in high-dimensional regression with big data using Gaussian scale mixture priors&rdquo; is published in the <em>Journal of Machine Learning Research</em>. This is joint work with <a href=\"https://sites.google.com/view/rajguhaniyogi/home\">Dr. Rajarshi Guhaniyogi</a>.",None),
  ("2025","paper","Our paper &ldquo;Multi-object data integration in the study of primary progressive aphasia&rdquo; is published in <em>The Annals of Applied Statistics</em>.",None),
@@ -61,6 +96,11 @@ NEWS_KIND = {"position":"Position","funding":"Funding","paper":"Publication","ot
 
 RESEARCH_INTRO = 'My research centers on the statistical challenges posed by highly structured data collected in an increasing number of applications, from imaging to wearable technologies. Frequently the observed data are discrete samples of an underlying functional process with complex dependencies that traditional models cannot capture. A central theme is providing computationally efficient methods for these rich data structures that preserve information along each dimension while producing interpretable components and inferences.'
 
+# --- AREAS: the three sections of the Research page -----------------------
+#   t     = the heading
+#   body  = the paragraphs, one per pair of quotes
+#   tags  = the small labels underneath
+#   pubs  = which papers are listed at the bottom, using the short names in SLUGS
 AREAS = [
  dict(id="dpm", n="01", t="Disease progression models",
    img="tadpole.png", ratio="580/350",
@@ -91,6 +131,14 @@ AREAS = [
 ME = '<b class="me">Scheffler AW</b>'
 
 # (year, title, authors, venue, detail, url, role)
+# --- METHODS: your publications ------------------------------------------
+# Newest first. Each entry is:
+#     (year, "Title", "Authors", "Journal", "volume/pages", "link or None", "ROLE"),
+# Use "Preprint" as the journal for anything not yet published -- that is what
+# sends it to the "Working papers" section.
+# {ME} inside the authors prints your own name in bold. Leave it as is.
+# IMPORTANT: after adding an entry here, add a short nickname in SLUGS below,
+# in the SAME position (first entry here = first nickname there).
 METHODS = [
  (2026,"Uncertainty-aware neural multivariate geostatistics",
   f"Jeon Y, {ME}, Guhaniyogi R","Preprint","arXiv:2602.16146","https://arxiv.org/abs/2602.16146","CO"),
@@ -127,7 +175,26 @@ METHODS = [
   f"{ME}, Hasenstab K, Telesca D, Sugar CA, Jeste S, DiStefano C, Şentürk D","Biometrics","73(3), 999&ndash;1009","https://pubmed.ncbi.nlm.nih.gov/28072468/","FIRST"),
 ]
 
-SLUGS = ['geostat', 'dpm-align', 'sketching', 'multiobj', 'xai', 'surrogates', 'tensorclust', 'inva', 'adaptive', 'erp-chapter', 'multilevel-hpca', 'cov-hpca', 'hpca', 'gflm', 'mdfpca']
+# --- SLUGS: a short nickname for each paper above, in the SAME ORDER ------
+# Used by AREAS to decide which papers appear on the Research page.
+# Add one here whenever you add one to METHODS.
+SLUGS = [
+ "geostat",         # Uncertainty-aware neural multivariate geostatistics
+ "dpm-align",       # Bayesian threshold-aligned joint disease progression
+ "sketching",       # Sketching in high-dimensional regression
+ "multiobj",        # Multi-object data integration in PPA
+ "xai",             # Deep generative modeling, XAI
+ "surrogates",      # Interpretable DNN for functional surrogates
+ "tensorclust",     # Bayesian covariance based clustering
+ "inva",            # INVA harmonization
+ "adaptive",        # Bayesian adaptive design
+ "erp-chapter",     # Modeling longitudinal trends in ERPs
+ "multilevel-hpca", # Multilevel hybrid PCA
+ "cov-hpca",        # Covariate-adjusted hybrid PCA
+ "hpca",            # Hybrid PCA, Biostatistics
+ "gflm",            # Covariate-adjusted region-referenced GFLM
+ "mdfpca",          # Multi-dimensional FPCA, Biometrics
+]
 M = {k: v for k, v in zip(SLUGS, METHODS)}
 
 ROLE_LABEL = {"FIRST":"First author","SENIOR":"Senior author","CO":"Co-author","SOLE":"Sole author"}
@@ -151,6 +218,9 @@ SOFTWARE = [
 # ---- People ----
 PEOPLE_INTRO = ('Our group develops statistical methodology for structured biomedical data, working closely with '
                 'clinical collaborators across UCSF. Members are listed below.')
+# --- PEOPLE: the People page ---------------------------------------------
+# To add someone, copy the block from dict(name= down to its closing ),
+# and paste it after. Photos go in the images folder.
 PEOPLE = [
  dict(group="Principal Investigator", members=[
    dict(name=NAME, role=ROLE_FULL, img="headshot.jpg",
@@ -167,6 +237,10 @@ PEOPLE_JOIN = ('<strong>Interested in joining?</strong> I am glad to hear from p
                'methods or functional data analysis, and from clinical collaborators with structured data problems. '
                f'Email me at <a href="mailto:{EMAIL}">{EMAIL}</a> with a short note and your CV.')
 
+# --- COURSES: the Teaching page ------------------------------------------
+# Each entry is:
+#     ("Code", "Course title", "Years", "Your role", "Description", None, "link"),
+# Leave the None alone.
 COURSES = [
  ("BIOSTAT 208","Biostatistical Methods for Clinical Research II","2023 &ndash; present","Course Director and Lecturer",
   "A second course in biostatistics focused on multi-predictor methods, including multiple linear and multiple logistic regression. Emphasis is on the practical and proper use of statistical methodology and its interpretation.",
