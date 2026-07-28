@@ -1,0 +1,32 @@
+name: Rebuild site
+
+on:
+  push:
+    branches: [master]
+    paths: ['_generator/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Regenerate pages
+        run: python3 _generator/build_site.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain -- '*.html' style.css)" ]; then
+            git add -- '*.html' style.css
+            git commit -m "Rebuild site from _generator/content.py"
+            git push
+          else
+            echo "No changes."
+          fi
