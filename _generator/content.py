@@ -48,7 +48,7 @@ NAV = [("index.html","About"),("research.html","Research"),
 # <a href="...">links</a> both work.
 BIO = [
  'I am an Associate Professor in Residence in the <a href="https://profiles.ucsf.edu/aaron.scheffler">Department of Epidemiology &amp; Biostatistics</a> at the University of California, San Francisco. My research program addresses the statistical challenges that arise in highly structured biomedical data &mdash; disease progression models, joint models of multi-modal brain images, high-dimensional regressions, functional data analysis, and curve registration and warping.',
- 'I am a core statistician for several centers at the UCSF Memory and Aging Center, including the Alzheimer’s Disease Research Center and the <a href="https://websites.ucsf.edu/website/alba-language-neurobiology-lab">ALBA Language Neurobiology Laboratory</a>, and I hold faculty appointments in Computational Precision Health, the Bakar Computational Health Sciences Institute, and the Center for Intelligent Imaging. I maintain a wide set of collaborations with clinical and public health researchers at UCSF in neurology, orthopedics, and HIV/AIDS.',
+ 'I am a core statistician for several centers at the UCSF Memory and Aging Center, including the Alzheimer’s Disease Research Center and the <a href="https://websites.ucsf.edu/website/alba-language-neurobiology-lab">ALBA Language Neurobiology Laboratory</a>, and I hold faculty affiliations in Computational Precision Health, the Bakar Computational Health Sciences Institute, and the Center for Intelligent Imaging. I maintain a wide set of collaborations with clinical and public health researchers at UCSF in neurology, orthopedics, and HIV/AIDS.',
  'My methodological research is supported by an <strong>NIH/NINDS R01</strong> on Bayesian object-oriented modeling of multi-modal imaging data, and I serve as a Multiple Principal Investigator and Associate Program Director for Biostatistics and AI on the <strong>UCSF CTSA K12</strong> program.',
  'Prior to UCSF I received a doctorate from the Department of Biostatistics at UCLA under the advisement of <a href="https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk">Dr. Damla Senturk</a>, and a BA in Biochemistry from Columbia University.',
 ]
@@ -262,4 +262,4 @@ TEACH_INTRO = 'I teach through the UCSF <a href="https://ticr.ucsf.edu/">Trainin
 TEACH_OUTRO = ('In 2024 I received the <strong>Excellence in Teaching</strong> award from the UCSF Training in Clinical '
                'Research Program, given to a single instructor each year, and the <strong>Dean’s Apple for Teachers</strong> '
                'award from the School of Pharmacy. I also serve as a faculty mentor in the UCSF K Scholars Program and on '
-               'masters and doctoral committees across Biostatistics, Bioinformatics, and Epidemiology.')
+               'masters and doctoral committees in the Department of Epidemiology & Biostatistics.')
