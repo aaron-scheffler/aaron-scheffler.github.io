@@ -6,7 +6,7 @@ My methodological research is sponsored by extramural grants from the __National
 
 Prior to my arrival at UCSF, I received a doctorate from the Department of Biostatistics at the University of California, Los Angeles (UCLA) under the advisement of [Dr. Damla Senturk](https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk) and a BA in Biochemistry from Columbia University. 
 
-For more information, please see my [CV](aaron_cv_2024.pdf).
+For more information, please see my [CV](aaron_cv_2026.pdf).
 
 ### News
 * __January 2024:__ We're hiring! Dr. Rajarshi Guhaniyogi and I are are seeking a postdoctoral research associate position at the Department of Statistics at Texas A&M University (starting as early as May 2024) for a NIH-funded research program. The research is related to one or more of the following areas: Bayesian learning with heterogeneous objects (e.g., tensor, functional data, Bayesian interpretable deep learning with heterogeneous objects, distributed Bayesian computation and Federated Learning with Gaussian processes and their variants, and data sketching with random sketching matrices for efficient Bayesian inference with massive structured data. Please e-mail me directly for more information.
