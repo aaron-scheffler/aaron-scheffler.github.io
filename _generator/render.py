@@ -125,10 +125,12 @@ def people_body():
             links = "".join(
                 f'<a class="lnk" href="{u}"{" target=_blank rel=noopener" if u.startswith("http") else ""}>{n}</a>'
                 for n, u in m["links"])
+            bio_html = f"<p>{m['bio']}</p>" if m.get("bio") else ""
+            links_html_ = f'<nav class="links">{links}</nav>' if links else ""
             o.append(f"""<article class="person">
   <img class="pphoto" src="{IMG}{m['img']}" alt="Portrait of {m['name']}" loading="lazy">
   <div class="pbody"><h3>{m['name']}</h3><div class="prole">{m['role']}</div>
-  <p>{m['bio']}</p><nav class="links">{links}</nav></div>
+  {bio_html}{links_html_}</div>
 </article>""")
         o.append('</div></section>')
     o.append(f'<section class="block join"><p>{PEOPLE_JOIN}</p></section>')

@@ -231,6 +231,39 @@ PEOPLE = [
                ("Google Scholar","https://scholar.google.com/citations?user=4aba0JUAAAAJ&hl=en"),
                ("Email","mailto:aaron.scheffler@ucsf.edu")]),
  ]),
+ dict(group="Current Members", members=[
+   dict(name="Raj", role="Professor, Department of Statistics, Texas A&amp;M University", img="raj-photo.jpg",
+        bio="My research interests lie broadly in the development of Bayesian parametric and non-parametric "
+            "methodology in complex biomedical and machine learning applications. My ongoing research focus is on "
+            "scalable Bayesian methods for big data, dimensionality reduction, spatial/spatio-temporal statistics, "
+            "and functional and object data (networks, tensor) analysis.",
+        links=[]),
+   dict(name="Isabella Pei", role="Senior, UC Berkeley &mdash; Computer Science, Cognitive Science &amp; Data Science",
+        img="isabella-photo.jpeg",
+        bio="I am a senior at UC Berkeley studying Computer Science, Cognitive Science, and Data Science. My "
+            "current work focuses on developing Bayesian mixture models to characterize and predict Alzheimer&rsquo;s "
+            "disease progression. My research interests lie broadly in the intersection of machine learning/"
+            "computational modeling and healthcare.",
+        links=[]),
+   dict(name="Eric Yuzhe Jiang", role="Masters Student, Harvard University Institute for Applied Computational Science",
+        img="eric-photo.jpg",
+        bio="I am a graduate student at Harvard University&rsquo;s Institute for Applied Computational Science (IACS), "
+            "focusing on the intersection of applied mathematics, data science, and computational biology. My current "
+            "research with the group uses Bayesian mixture models to analyze Alzheimer&rsquo;s disease progression. "
+            "Prior to Harvard, I earned my BA in Applied Mathematics from UC Berkeley. My research interests lie "
+            "broadly in statistical methods, partial differential equations in fluids and biology, and numerical "
+            "methods.",
+        links=[]),
+ ]),
+ dict(group="Past Members", members=[
+   dict(name="Yeseul", role="Assistant Professor, Department of Mathematics and Statistics", img="yeseul-photo.jpg",
+        bio="My research focuses on developing explainable Bayesian deep learning methods that combine accurate "
+            "prediction, statistical interpretability, and principled uncertainty quantification, particularly for "
+            "high-dimensional spatial and biomedical data.",
+        links=[]),
+   dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences", img="rong-photo.jpeg",
+        bio="", links=[]),
+ ]),
 ]
 PEOPLE_JOIN = ('<strong>Interested in joining?</strong> I am glad to hear from prospective PhD students in the UCSF '
                'Epidemiology &amp; Biostatistics program, from postdoctoral candidates with a background in Bayesian '
