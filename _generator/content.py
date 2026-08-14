@@ -232,7 +232,7 @@ PEOPLE = [
                ("Email","mailto:aaron.scheffler@ucsf.edu")]),
  ]),
  dict(group="Current Members", members=[
-   dict(name="Raj", role="Professor, Department of Statistics, Texas A&amp;M University", img="raj-photo.jpg",
+   dict(name="Rajarshi Guhaniyogi", role="Professor, Department of Statistics, Texas A&amp;M University", img="raj-photo.jpg",
         bio="My research interests lie broadly in the development of Bayesian parametric and non-parametric "
             "methodology in complex biomedical and machine learning applications. My ongoing research focus is on "
             "scalable Bayesian methods for big data, dimensionality reduction, spatial/spatio-temporal statistics, "
