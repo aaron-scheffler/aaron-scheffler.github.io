@@ -256,7 +256,7 @@ PEOPLE = [
         links=[]),
  ]),
  dict(group="Past Members", members=[
-   dict(name="Yeseul", role="Assistant Professor, Department of Mathematics and Statistics, University of North Carolina at Charlotte", img="yeseul-photo.jpg",
+   dict(name="Yeseul Jeon", role="Assistant Professor, Department of Mathematics and Statistics, University of North Carolina at Charlotte", img="yeseul-photo.jpg",
         bio="My research focuses on developing explainable Bayesian deep learning methods that combine accurate "
             "prediction, statistical interpretability, and principled uncertainty quantification, particularly for "
             "high-dimensional spatial and biomedical data.",
