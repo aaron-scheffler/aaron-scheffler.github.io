@@ -262,7 +262,7 @@ PEOPLE = [
             "high-dimensional spatial and biomedical data.",
         links=[]),
    dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences, Dartmouth University", img="rong-photo.jpeg",
-        bio="", links=[]),
+        bio="My research interests include Bayesian modeling, Machine learning algorithms, Multimodal data integration for health and biomedical data.", links=[]),
  ]),
 ]
 PEOPLE_JOIN = ('<strong>Interested in joining?</strong> I am glad to hear from prospective PhD students in the UCSF '
