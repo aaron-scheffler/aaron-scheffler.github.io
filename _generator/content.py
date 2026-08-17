@@ -261,7 +261,7 @@ PEOPLE = [
             "prediction, statistical interpretability, and principled uncertainty quantification, particularly for "
             "high-dimensional spatial and biomedical data.",
         links=[]),
-   dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences, Dartmouth University", img="rong-photo.jpeg",
+   dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences, Dartmouth College", img="rong-photo.jpeg",
         bio="My research interests include Bayesian modeling, Machine learning algorithms, Multimodal data integration for health and biomedical data.", links=[]),
  ]),
 ]
