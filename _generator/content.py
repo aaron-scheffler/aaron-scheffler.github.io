@@ -238,6 +238,8 @@ PEOPLE = [
             "scalable Bayesian methods for big data, dimensionality reduction, spatial/spatio-temporal statistics, "
             "and functional and object data (networks, tensor) analysis.",
         links=[]),
+   dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences, Dartmouth College", img="rong-photo.jpeg",
+        bio="My research interests include Bayesian modeling, Machine learning algorithms, Multimodal data integration for health and biomedical data.", links=[]),          
    dict(name="Isabella Pei", role="Senior, UC Berkeley &mdash; Computer Science, Cognitive Science &amp; Data Science",
         img="isabella-photo.jpeg",
         bio="I am a senior at UC Berkeley studying Computer Science, Cognitive Science, and Data Science. My "
@@ -245,6 +247,12 @@ PEOPLE = [
             "disease progression. My research interests lie broadly in the intersection of machine learning/"
             "computational modeling and healthcare.",
         links=[]),
+   dict(name="Andrew Nguyen", role="Senior, UC Berkeley &mdash; Mathematics &amp; Statistics",
+        img="eric-photo.jpg",
+        bio="I study applied mathematics and statistics as a senior undergraduate at UC Berkeley. With the group, I work on joint longitudinal and multistate 
+        modeling to analyze ADNI data, particularly focusing on Bayesian methods. I am broadly interested in developing statistical 
+        methodology for structured data problems that arise commonly in the domain sciences.",
+        links=[]),         
    dict(name="Eric Yuzhe Jiang", role="Masters Student, Harvard University Institute for Applied Computational Science",
         img="eric-photo.jpg",
         bio="I am a graduate student at Harvard University&rsquo;s Institute for Applied Computational Science (IACS), "
@@ -261,8 +269,6 @@ PEOPLE = [
             "prediction, statistical interpretability, and principled uncertainty quantification, particularly for "
             "high-dimensional spatial and biomedical data.",
         links=[]),
-   dict(name="Rong Wu", role="PhD, Quantitative Biomedical Sciences, Dartmouth College", img="rong-photo.jpeg",
-        bio="My research interests include Bayesian modeling, Machine learning algorithms, Multimodal data integration for health and biomedical data.", links=[]),
  ]),
 ]
 PEOPLE_JOIN = ('<strong>Interested in joining?</strong> I am glad to hear from prospective PhD students in the UCSF '
