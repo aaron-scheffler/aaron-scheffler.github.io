@@ -247,12 +247,13 @@ PEOPLE = [
             "disease progression. My research interests lie broadly in the intersection of machine learning/"
             "computational modeling and healthcare.",
         links=[]),
-   dict(name="Andrew Nguyen", role="Senior, UC Berkeley &mdash; Mathematics &amp; Statistics",
-        img="eric-photo.jpg",
-        bio="I study applied mathematics and statistics as a senior undergraduate at UC Berkeley. With the group, I work on joint longitudinal and multistate 
-        modeling to analyze ADNI data, particularly focusing on Bayesian methods. I am broadly interested in developing statistical 
-        methodology for structured data problems that arise commonly in the domain sciences.",
-        links=[]),         
+      dict(name="Andrew Nguyen", role="Senior, UC Berkeley &mdash; Mathematics &amp; Statistics",
+        img="andrew-photo.jpg",
+        bio="I study applied mathematics and statistics as a senior undergraduate at UC Berkeley. With the "
+            "group, I work on joint longitudinal and multistate modeling to analyze ADNI data, particularly "
+            "focusing on Bayesian methods. I am broadly interested in developing statistical methodology for "
+            "structured data problems that arise commonly in the domain sciences.",
+        links=[]),     
    dict(name="Eric Yuzhe Jiang", role="Masters Student, Harvard University Institute for Applied Computational Science",
         img="eric-photo.jpg",
         bio="I am a graduate student at Harvard University&rsquo;s Institute for Applied Computational Science (IACS), "
