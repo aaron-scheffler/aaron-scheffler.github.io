@@ -248,7 +248,7 @@ PEOPLE = [
             "computational modeling and healthcare.",
         links=[]),
       dict(name="Andrew Nguyen", role="Senior, UC Berkeley &mdash; Mathematics &amp; Statistics",
-        img="andrew-photo.jpg",
+        img="andrew.jpg",
         bio="I study applied mathematics and statistics as a senior undergraduate at UC Berkeley. With the "
             "group, I work on joint longitudinal and multistate modeling to analyze ADNI data, particularly "
             "focusing on Bayesian methods. I am broadly interested in developing statistical methodology for "
